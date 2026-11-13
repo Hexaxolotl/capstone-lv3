@@ -1,26 +1,8 @@
-function Header() {
-  return <h1>Ash Ketchum</h1>
-}
-
 function App() {
   return (
     <div>
-      <Header />
-      <p>Pokémon trainer from Pallet Town.</p>
-    </div>
-  )
-}
-
-export default App
-function Header() {
-  return <h1>Ash Ketchum</h1>
-}
-
-function App() {
-  return (
-    <div>
-      <Header />
-      <p>Pokémon trainer from Pallet Town.</p>
+      <h1>To Be Played (TBP)</h1>
+      <p>A tool for anyone who wants to keep track of what games they have played and want to pla.</p>
     </div>
   )
 }
