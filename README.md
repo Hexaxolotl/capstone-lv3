@@ -10,9 +10,9 @@ Table: `tools`
 `id` and `created_at` are made for you.
 
 ### What a visitor can do
-- See a list of 
-- Add a tool they borrowed.
-- Mark one tool returned.
+- create a list of games 
+- Add a game to the list they have already played.
+- add a game to a "wishlist" to play.
 
 
 table 2
@@ -22,3 +22,7 @@ table 2
 | `gameid` | `int8` | 8|
 | `played` | `bool` | true |
 | `wishlist` | `bool` |true |
+
+## Links
+- Live: https://capstone-lv3.netlify.app/
+- Repo: https://github.com/Hexaxolotl/capstone-lv3
