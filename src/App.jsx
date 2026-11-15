@@ -1,3 +1,8 @@
+import { supabase } from './utils/supabase'
+
+
+
+
 function App() {
   return (
     <div>
