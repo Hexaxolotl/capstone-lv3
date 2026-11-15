@@ -50,12 +50,13 @@ Table: `games`
 | `wishlist` | `bool` |true |
 
 ## The plan
+![Wireframe 1](wireframe.png)
+![Wireframe 2](wireframe2.png)
 
 ### Sections
-- What a visitor sees, top to bottom.
+- A table for the user to add games to.
+- The table will allow the user to have games they played and want to play.
 
-![Wireframe](wireframe.png)
-![Wireframe](wireframe2.png)
 
 ## System
 - The visitor:
@@ -80,5 +81,5 @@ Table: `games`
 - Repo: https://github.com/Hexaxolotl/capstone-lv3
 
 ## Team
-Pod: @handle, @handle, @handle
+Pod: @FrankCastle-Arch, @mattwainwright-dev, @CharityCP
 Pod plan: your pod's Google Doc link
