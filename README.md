@@ -82,4 +82,6 @@ Table: `games`
 
 ## Team
 Pod: @FrankCastle-Arch, @mattwainwright-dev, @CharityCP
-Pod plan: your pod's Google Doc link
+
+## Pod plan
+https://docs.google.com/document/d/1mQySxORC2Bp30ZHNkmuCxnYR95Vv0X6jM_2CmppKQQk/edit?usp=sharing
