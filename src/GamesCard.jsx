@@ -1,4 +1,4 @@
-import useTable from "./useTable"
+
 
 function GameCard({ games }) {
   return (
