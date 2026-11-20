@@ -1,7 +1,7 @@
-import GameCard from './GameCard'
+import GameCard from './GamesCard.jsx'
 
 function List({ data, savedGames, reloadSaved }) {
-    const playedGames = savedGames.filer(
+    const playedGames = savedGames.filter(
         (saved) => saved.status === "played"
     )
 
@@ -11,24 +11,24 @@ function List({ data, savedGames, reloadSaved }) {
     return (
         <>
             <h2>Played</h2>
-            {playedGames/map((saved) => {
-                const game =data.find((item)=> item.id === saved.game_id)
+            {playedGames.map((saved) => {
+                const game = data.find((item) => item.id === saved.game_id)
 
                 return game
-                ?<GameCard key={game.id} game={game} reloadSaved ={reloadSaved}/>
-                :null
+                    ? <GameCard key={game.id} games={game} reloadSaved={reloadSaved} />
+                    : null
             })}
 
             <h2>Want To Play</h2>
-            {wantToPlayGames.map((saved)=> {
-                const game = data.find((item)=> item.id === saved.game_id)
+            {wantToPlayGames.map((saved) => {
+                const game = data.find((item) => item.id === saved.game_id)
 
                 return game
-                ?<GameCard key ={game.id} games={games} reloadSaved = {reloadSaved}/>
-                :null
+                    ? <GameCard key={game.id} games={game} reloadSaved={reloadSaved} />
+                    : null
             })}
             <p>
-                All games count: {games.length}
+                All games count: {data.length}
             </p>
         </>
     )

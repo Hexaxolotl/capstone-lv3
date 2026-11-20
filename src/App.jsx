@@ -22,7 +22,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/saved" element={<List games={data} savedGames={savedGames}/>}/>
+        <Route path="/saved" element={<List data={data} savedGames={savedGames} reloadSaved = {reloadSaved}/>}/>
       </Routes>
     </div>
   )
