@@ -6,8 +6,8 @@ const addGame = async (event) => {
   const formData = new FormData(event.target)
   const gameData = {
     title: formData.get("title"),
-    genre: formData.get("genre"),
-    release_year: formData.get("release_year")
+    genre: formData.get("genre")|| null,//If the genre or release year is not provided, it will be set to null
+    release_year: formData.get("release_year")|| null //If the genre or release year is not provided, it will be set to null
   }
   await supabase.from("games").insert([gameData])
   reload()
