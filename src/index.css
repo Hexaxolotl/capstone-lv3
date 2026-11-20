@@ -167,3 +167,18 @@ gap: 1rem;
   --pico-primary-hover: #d18a78;
 }
 
+@media (max-width: 600px) {
+  .quest-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .quest-status {
+    flex-direction: column;
+  }
+
+  .quest-status button {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}

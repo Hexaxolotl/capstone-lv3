@@ -16,7 +16,7 @@ function App() {
         <ul>
           <li><strong>To Be Played (TBP)</strong></li>
         </ul>
-        <ul>
+        <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to = "/saved">Saved Games</Link></li>
         </ul>
