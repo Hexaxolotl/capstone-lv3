@@ -18,9 +18,9 @@ To Be Played (TBP) solves gaming backlog overwhelm by giving players a fast, clu
 2. Save and categorize games: Visitors can add games directly to either their Want to Play list or their Played list.
 3. Update or remove entries: Visitors can move saved games between Want to Play and Played, or remove titles from their ledger entirely.
 
-
 ### Left out, and why
 - User accounts: Not included in this version so I could focus on searching and tracking games. Without accounts, saved games aren’t private to each visitor. If I continue the project, I’d consider adding accounts and private lists.
+
 
 ## The table
 Table: `games`
