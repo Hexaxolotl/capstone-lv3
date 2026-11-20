@@ -1,28 +1,25 @@
 
-
-
-
 # Your App's Name
+To Be Played (TBP)
 
 ## The problem
 An app to keep track of the games the user has played and wants to play.
 
 ## Persona
 - Name and situation:
-- Frustration:
-- Goal:
-- When they'd open the app:
+- Frustration: not keeping track of the games the user has or has not played.
+- Goal: making a list to keep track of games
+- When they'd open the app: they will see the search
 
 ## Scope
 
 ### In this version
-1. A visitor sees the list.
-2. A visitor adds a row.
-3. Your own line.
+1. A visitor sees the search bar.
+2. A visitor adds a game.
+3. mark the game as played or to be played
 
 ### Left out, and why
-- A feature, and why it waits.
-- Another feature, and why it waits.
+- logging in, needed more time
 
 ## The table
 Table: `games`
@@ -54,27 +51,25 @@ Table: `games`
 ![Wireframe 2](wireframe2.png)
 
 ### Sections
-- A table for the user to add games to.
+- a search bar to look for games.
 - The table will allow the user to have games they played and want to play.
 
 
 ## System
-- The visitor:
-- The app:
-- The visitor sees:
-- While loading:
-- If nothing matches:
-- If it fails:
+- The visitor: will search games
+- The app drop down menu to show all games narrowing down the results while typing
+- While loading: ༄˖°.🍃.ೃ࿔*:･Loading༄˖°.🍃.ೃ࿔*:･
+- If nothing matches: ☆.𓋼𓍊 𓆏 𓍊𓋼𓍊.☆Error:
+- If it fails: 𓅰 𓅬 𓅭 𓅮 𓅯No games found.𓅰 𓅬 𓅭 𓅮 𓅯
 
 ## Reflection: the plan
 
 ## What changed
+the way the user saves games has changed
 
-## Reflection: feedback
-
-## Reflection
 
 ## AI use
+pictures, used to clear up confusion on some issues.
 
 ## Links
 - Live: https://capstone-lv3.netlify.app/

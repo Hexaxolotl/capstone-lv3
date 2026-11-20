@@ -1,23 +1,39 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
+  --pico-background-color: #121714;
+  --pico-color: #ede8dc;
+  --pico-muted-color: #a6a08e;
+
+  --text: var(--pico-color);
+  --text-h: var(--pico-color);
+  --bg: var(--pico-background-color);
+
+  --pico-card-background-color: #1c1b17;
+  --pico-card-border-color: #333028;
+  --pico-muted-border-color: #333028;
+
+  --border: var(--pico-muted-border-color);
+  --code-bg: var(--pico-card-background-color);
+  --pico-primary: #4d8c69;
+  --pico-primary-background: #4d8c69;
+  --pico-primary-border: #4d8c69;
+  --pico-primary-hover: #5da37c;
+  --pico-primary-hover-background: #5da37c;
+  --pico-primary-hover-border: #5da37c;
+  --pico-primary-inverse: #121714;
+
+  --accent: var(--pico-primary);
+  --accent-border: var(--pico-primary-border);
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: "Lora", Georgia, serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
+  color-scheme: dark;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
@@ -30,25 +46,10 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
+#social .button-icon {
+  filter: invert(1) brightness(2);
 }
+
 
 body {
   margin: 0;
@@ -67,7 +68,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
@@ -77,20 +79,24 @@ h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
+
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
   }
 }
+
 h2 {
   font-size: 24px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
+
   @media (max-width: 1024px) {
     font-size: 20px;
   }
 }
+
 p {
   margin: 0;
 }
@@ -108,4 +114,81 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+.top-nav {
+  border-bottom: 1px solid var(--pico-muted-border-color);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.hero-banner {
+  border-left: 4px solid var(--pico-primary);
+  text-align: left;
+}
+
+.quest-board {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background-color: rgba(155, 160, 142, 0.15);
+  color: var(--pico-muted-color);
+}
+
+.game-search {
+  margin-bottom: 0.75rem;
+}
+
+.game-search input {
+  margin-bottom: 0;
+}
+
+.quest-row {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--pico-muted-border-color);
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.quest-info {
+  text-align: left;
+}
+
+.quest-status {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.abandon-quest {
+  --pico-primary: #c17a68;
+  --pico-primary-hover: #d18a78;
+}
+
+@media (max-width: 600px) {
+  .quest-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .quest-status {
+    flex-direction: column;
+  }
+
+  .quest-status button {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.nav-links{
+  gap: 2rem;
 }
