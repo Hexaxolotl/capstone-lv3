@@ -19,9 +19,6 @@ To Be Played (TBP) solves gaming backlog overwhelm by giving players a fast, clu
 3. Update or remove entries: Visitors can move saved games between Want to Play and Played, or remove titles from their ledger entirely.
 
 
-### Left out, and why
-- 
-
 ## The table
 Table: `games`
 
