@@ -116,18 +116,22 @@ code {
   background: var(--code-bg);
 }
 
-.top-nav{
+.top-nav {
   border-bottom: 1px solid var(--pico-muted-border-color);
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
 }
 
-.hero-banner{
+.hero-banner {
   border-left: 4px solid var(--pico-primary);
   text-align: left;
 }
 
-.quest-board{
+.quest-board {
   display: inline-block;
   padding: 0.25rem 0.65rem;
   border-radius: 999px;
@@ -135,35 +139,37 @@ code {
   color: var(--pico-muted-color);
 }
 
-.game-search{
+.game-search {
   margin-bottom: 0.75rem;
 }
 
-.game-search input{
+.game-search input {
   margin-bottom: 0;
 }
 
-.quest-row{
+.quest-row {
   background: transparent;
   border: 0;
   border-bottom: 1px solid var(--pico-muted-border-color);
   border-radius: 0;
   box-shadow: none;
   display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
+
 .quest-info {
   text-align: left;
 }
+
 .quest-status {
   display: flex;
   gap: 0.5rem;
 }
 
-.abandon-quest{
-   --pico-primary: #c17a68;
+.abandon-quest {
+  --pico-primary: #c17a68;
   --pico-primary-hover: #d18a78;
 }
 
@@ -181,4 +187,8 @@ gap: 1rem;
     width: 100%;
     margin-bottom: 0;
   }
+}
+
+.nav-links{
+  gap: 2rem;
 }
