@@ -20,7 +20,7 @@ To Be Played (TBP) solves gaming backlog overwhelm by giving players a fast, clu
 
 
 ### Left out, and why
-- 
+- User accounts: Not included in this version so I could focus on searching and tracking games. Without accounts, saved games aren’t private to each visitor. If I continue the project, I’d consider adding accounts and private lists.
 
 ## The table
 Table: `games`
