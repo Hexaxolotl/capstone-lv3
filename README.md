@@ -1,7 +1,4 @@
 
-
-
-
 # Your App's Name
 To Be Played (TBP)
 
