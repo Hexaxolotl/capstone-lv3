@@ -21,7 +21,11 @@ function Home({ data, loading, error, reloadSaved }) {
     
     return (
         <>
-            <h1>Welcome </h1>
+        <article className="hero-banner">
+            <h1>Welcome, weary traveler. </h1>
+            <p> Looking for a way to keep track of the games
+                you've played or want to play? Look no further—consider this your TBP (like a TBR pile, except with more unspent skill points and Steam sale regret).</p>
+        </article>
             <label htmlFor="game-search">Search Games</label>
             <input
                 id="game-search"
@@ -40,7 +44,7 @@ function Home({ data, loading, error, reloadSaved }) {
             }
             {showLoadingMessage && <p>༄˖°.🍃.ೃ࿔*:･Loading games༄˖°.🍃.ೃ࿔*:･</p>}
             {showErrorMessage && <p>☆.𓋼𓍊 𓆏 𓍊𓋼𓍊.☆Error: {error}☆.𓋼𓍊 𓆏 𓍊𓋼𓍊.☆</p>}
-            {showNoResultsMessage && <p>𓅰 𓅬 𓅭 𓅮 𓅯No games found.𓅰 𓅬 𓅭 𓅮 𓅯</p>}
+            {showNoResultsMessage && <p>404: Game not found. Either it’s super indie, unreleased, or there's a typo.</p>}
 
         </>
     )

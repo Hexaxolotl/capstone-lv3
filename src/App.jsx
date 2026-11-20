@@ -12,11 +12,14 @@ function App() {
   const { data: savedGames, reload: reloadSaved } = useTable("personal_games") //This custom hook fetches data from the "personal_games" table in Supabase and returns the data and a function to reload the data.
   return (
     <div>
-      <h1>To Be Played (TBP)</h1>
-      <p>A tool for anyone who wants to keep track of what games they have played and want to play.</p>
       <nav>
-        <Link to="/">Home</Link> <br></br>
-        <Link to="/saved">Saved Games</Link>
+        <ul>
+          <li><strong>To Be Played (TBP)</strong></li>
+        </ul>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to = "/saved">Saved Games</Link></li>
+        </ul>
       </nav>
       <Routes>
         <Route path="/" element={<Home data={data} loading={loading} error={error} reloadSaved={reloadSaved} />} />
