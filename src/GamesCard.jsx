@@ -23,13 +23,16 @@ function GameCard({ games, savedItem, reloadSaved }) { //This component displays
     }
   }
   return (
-    <article>
-      <h2>{games.title}</h2>
-      <p>Genre: {games.genre}</p>
-      <p>Year of release: {games.release_year}</p>
-      <button onClick={() => handlesave("played")}>Mark as Played</button> <br></br>
-      <button onClick={() => handlesave("want_to_play")}>Add to Want to Play</button>
-      <button onClick={handleRemove}>Remove</button>
+    <article className="quest-row">
+      <div className="quest-info">
+        <h2>{games.title}</h2>
+        <p>Genre: {games.genre} &bull; Year: {games.release_year}</p>
+      </div>
+      <div className="quest-status">
+        <button className="outline" onClick={() => handlesave("played")}>Mark as Played</button>
+        <button className="outline" onClick={() => handlesave("want_to_play")}>Add to Want to Play</button>
+        <button className="outline abandon-quest" onClick={handleRemove}>Abandon Quest</button>
+      </div>
     </article>
   )
 }

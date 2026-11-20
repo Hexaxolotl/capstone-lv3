@@ -121,3 +121,49 @@ code {
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
 }
+
+.hero-banner{
+  border-left: 4px solid var(--pico-primary);
+  text-align: left;
+}
+
+.quest-board{
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background-color: rgba(155, 160, 142, 0.15);
+  color: var(--pico-muted-color);
+}
+
+.game-search{
+  margin-bottom: 0.75rem;
+}
+
+.game-search input{
+  margin-bottom: 0;
+}
+
+.quest-row{
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--pico-muted-border-color);
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 1rem;
+}
+.quest-info {
+  text-align: left;
+}
+.quest-status {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.abandon-quest{
+   --pico-primary: #c17a68;
+  --pico-primary-hover: #d18a78;
+}
+
