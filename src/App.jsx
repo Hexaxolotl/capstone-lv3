@@ -21,8 +21,8 @@ function App() {
         <Link to="/saved">Saved Games</Link>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/saved" element={<List data={data} savedGames={savedGames} reloadSaved = {reloadSaved}/>}/>
+        <Route path="/" element={<Home data={data} loading={loading} error={error} reloadSaved={reloadSaved} />} />
+        <Route path="/saved" element={<List data={data} savedGames={savedGames} reloadSaved={reloadSaved} />} />
       </Routes>
     </div>
   )

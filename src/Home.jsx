@@ -1,12 +1,22 @@
+import { useState } from 'react'
 
 
 
-
-function Home(){
-    return(
+function Home({ data, loading, error, reloadSaved }) {
+    const [search, setSearch] = useState("")
+    const filteredGames = data.filter((game) => 
+        game.title.toLowerCase().includes(search.toLowerCase()))
+    return (
         <>
-        <h1>Welcome </h1>
-        </>
+         <h1>Welcome </h1>
+        <label htmlFor="game-search">Search Games</label>
+        <input
+            id="game-search"
+            type="text"
+            value={search}
+            onChange={(event) => setSearch(event.target.value)}
+           />
+          </> 
     )
 }
 
