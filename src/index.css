@@ -115,3 +115,9 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.top-nav{
+  border-bottom: 1px solid var(--pico-muted-border-color);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}

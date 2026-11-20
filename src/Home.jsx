@@ -26,7 +26,7 @@ function Home({ data, loading, error, reloadSaved }) {
             <p> Looking for a way to keep track of the games
                 you've played or want to play? Look no further—consider this your TBP (like a TBR pile, except with more unspent skill points and Steam sale regret).</p>
         </article>
-            <label htmlFor="game-search">Search Games</label>
+            <label htmlFor="game-search">Search Quest</label>
             <input
                 id="game-search"
                 type="text"
