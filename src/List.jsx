@@ -15,7 +15,7 @@ function List({ data, savedGames, reloadSaved }) {
                 const game = data.find((item) => item.id === saved.game_id)
 
                 return game
-                    ? <GameCard key={game.id} games={game} reloadSaved={reloadSaved} />
+                    ? <GameCard key={game.id} games={game} savedItem={saved} reloadSaved={reloadSaved} />
                     : null
             })}
 
@@ -24,7 +24,7 @@ function List({ data, savedGames, reloadSaved }) {
                 const game = data.find((item) => item.id === saved.game_id)
 
                 return game
-                    ? <GameCard key={game.id} games={game} reloadSaved={reloadSaved} />
+                    ? <GameCard key={game.id} games={game} savedItem={saved} reloadSaved={reloadSaved} />
                     : null
             })}
             <p>
